@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bethel Methodist Academy </title>
+    
+    <!-- Css Files -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">  
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img\logo-removebg.png" alt=""></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="container1">
+        <div class="hero-text">
+            <h1>Bethel Methodist Academy</h1>
+            <p>Our school emphasizes creative thinking, critical reasoning and effective communication. Our school encourages behavior that is ethical, responsible and respectful to the rights
+            of others. Our school appreciates cultural diversity ...</p>
+        </div>
+        <div class="read-btn">
+            <a href="#"><button type="button">Read More</button></a>
+        </div>
+    </div>
+
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="img\asset1.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="img\2_4_s.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="img\2_2_s.jpg" alt=""></li>
+              </ul>
+        </div>
+      </section>
+
+      <div class="container2" style="padding-top: 10px;">
+        <div class="row">
+            <div class="col-sm-12 offset-0 home_intro_text" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="text-center"><span>Welcome To </span> <br> Bethel Methodist Academy</h1>
+                <p class="fs-4 text-center"><br/><span class="main-body" style="color: #1a1919;">We are thrilled to have you visit our website for Bethel Methodist Academy. <br>
+                As part of the network of schools under the Methodist Missionary Schools, <br> 
+                we have access to a wealth of resources and support, 
+                allowing our dedicated staff to provide the highest level of education to our students.</span><br/><br/></p>
+                <a class="btn d-flex justify-content-center read-more button text-center" role="button" href="#">Read More</a>
+                <!-- <div class="short-line">Work</div> -->
+            </div>
+        </div>
+    </div>
+
+    <section class="container pt-5 homelinks ">
+        <div class="row slick" >
+            <div class="pic-item">
+                <img style="width: 500px;" src="img\2_26_hl.jpg" alt="">
+            </div>
+            <div class="pic-item">
+                <img style="width: 500px;" src="img\2_28_hl.jpg" alt="">
+            </div>
+            <div>
+                <img style="width: 500px;" src="img\2_31_hl.jpg" alt="">
+            </div>
+        </div>    
+    </section>
+
+
+
+
+
+
+
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+<script>
+var splide = new Splide( '.splide', {
+        type  : 'fade',
+        rewind: true,
+        autoplay: true,
+        arrows: false,
+        pagination: false,
+        } );
+
+splide.mount();
+  </script>
+
+
+
+
+    <!-- Javascript Files -->
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html> 
