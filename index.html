@@ -57,7 +57,7 @@
     </div>
 
 
-    <section class="splide" aria-label="Splide Basic HTML Example">
+    <section class="splide" aria-label="Hero-heading">
         <div class="splide__track">
               <ul class="splide__list">
                   <li class="splide__slide"><img src="img\asset1.jpg" alt=""></li>
@@ -75,27 +75,38 @@
                 As part of the network of schools under the Methodist Missionary Schools, <br> 
                 we have access to a wealth of resources and support, 
                 allowing our dedicated staff to provide the highest level of education to our students.</span><br/><br/></p>
-                <a class="btn d-flex justify-content-center read-more button text-center" role="button" href="#">Read More</a>
-                <!-- <div class="short-line">Work</div> -->
+                <a class="d-flex justify-content-center read-more button text-center" role="button" href="#">Read More</a>
+                <div class="short-line"></div>
             </div>
         </div>
     </div>
 
-    <section class="container pt-5 homelinks ">
-        <div class="row slick" >
+        <section class="container pt-2 splide2 home-links" aria-label="Carousel-links">
+        <div class="splide__track home-links-pic">
+              <ul class="splide__list pic-item">
+                  <li class="splide__slide"><img style="width: 290px;" src="img\2_26_hl.jpg" alt=""></li>
+                  <li class="splide__slide"><img style="width: 290px;" src="img\2_28_hl.jpg" alt=""></li>
+                  <li class="splide__slide"><img style="width: 290px;" src="img\2_31_hl.jpg" alt=""></li>
+                  <li class="splide__slide"><img style="width: 290px;" src="img\2_27_hl.jpg" alt=""></li>
+              </ul>
+        </div>
+      </section>
+
+          <!-- <section class="container pt-2 homelinks slider ">
             <div class="pic-item">
-                <img style="width: 500px;" src="img\2_26_hl.jpg" alt="">
+                <img src="img\2_26_hl.jpg" alt="">
             </div>
             <div class="pic-item">
-                <img style="width: 500px;" src="img\2_28_hl.jpg" alt="">
+                <img src="img\2_28_hl.jpg" alt="">
             </div>
             <div>
-                <img style="width: 500px;" src="img\2_31_hl.jpg" alt="">
+                <img src="img\2_31_hl.jpg" alt="">
             </div>
-        </div>    
-    </section>
+            <div>
+                <img src="img\2_31_hl.jpg" alt="">
+            </div>
 
-
+    </section> -->
 
 
 
@@ -123,7 +134,7 @@
     </script>
 
 <script>
-var splide = new Splide( '.splide', {
+    var splide = new Splide( '.splide', {
         type  : 'fade',
         rewind: true,
         autoplay: true,
@@ -132,10 +143,27 @@ var splide = new Splide( '.splide', {
         } );
 
 splide.mount();
-  </script>
+</script>
 
+<script>
+    // $(".homelinks").slick({
+    //   dots: false,
+    //   infinite: true,
+    //   slidesToShow: 4,
+    //   slidesToScroll: 4,
+    //   adaptiveHeight:true,
+      
+    // });
 
+    $('.homelinks').slick();
 
+</script>
+
+<script>
+var splide = new Splide( '.splide2', {
+  } );
+  
+  splide.mount();</script>
 
     <!-- Javascript Files -->
     <script src="./js/main.js"></script>

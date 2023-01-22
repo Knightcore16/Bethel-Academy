@@ -58,7 +58,7 @@ $(document).ready(function(){
 
   
 $(document).ready(function(){
-    $('.slick').slick({
+    $('.row').slick({
       setting:
       setting-value
     });
