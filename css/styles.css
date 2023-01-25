@@ -476,13 +476,15 @@ body {
     margin-top: -35px;
 }
 
+
 a.read-more {
     text-decoration: none;
     display: flex;
-    border: none;
+    justify-content: center;
+    border: red 1px solid;
     transition: all ease-in-out .2s;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     font-family: "Open Sans",sans-serif;
     font-size: 15px;
     font-weight: 600;
@@ -627,9 +629,6 @@ ul.pic-item {
     font-size: 18px;
     background: #fff;
     padding: 60px 0 20px;
-
-
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -643,18 +642,29 @@ ul.pic-item {
     -webkit-align-items: center;
     align-items: center;
     margin: 0 auto;
-    /* border: red 10px solid; */
   }
-
- .swiper-slide img {
+  
+  
+  .swiper-slide .img-wrapper {
     position: relative;
-    display: block;
     width: 75%;
     height: 100%;
-    /* object-fit: cover; */
-    background: blue linear-gradient(180deg,transparent 0,#000 100%);
-
-
   }
-
- 
+  
+  .swiper-slide .img-wrapper:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,transparent 0,#000 100%);
+    opacity: 100%;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+  }
