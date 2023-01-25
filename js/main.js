@@ -57,10 +57,20 @@ $(document).ready(function(){
 //   });
 
   
-$(document).ready(function(){
-    $('.row').slick({
-      setting:
-      setting-value
-    });
-  });
+// $(document).ready(function(){
+//     $('.row').slick({
+//       setting:
+//       setting-value
+//     });
+//   });
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
       
