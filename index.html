@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="css\style_news.css">
     <link rel="stylesheet" href="css\style_footer.css">
     <link rel="stylesheet" href="css\news_events_tabs.css">
+    <!-- <link rel="stylesheet" href="css\style-about.css"> -->
 
     <!-- Icons CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
@@ -53,27 +54,46 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="img\logo-removebg.png" alt=""></a>
+    <!-- <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">FollowAndrew.dev</a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            </li>
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav> -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Edukate</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    <a href="course.html" class="nav-item nav-link">Courses</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="detail.html" class="dropdown-item">Course Detail</a>
+                            <a href="feature.html" class="dropdown-item">Our Features</a>
+                            <a href="team.html" class="dropdown-item">Instructors</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="#">Home</a></li>             
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Admissions</a></li>
-                    <li><a href="#">Academics</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- Navbar End -->
 
     <!-- Hero -->
@@ -109,7 +129,14 @@
                 As part of the network of schools under the Methodist Missionary Schools, <br> 
                 we have access to a wealth of resources and support, 
                 allowing our dedicated staff to provide the highest level of education to our students.</span><br/><br/></p>
-                <a class=" read-more button text-center" role="button" href="#">Read More</a>
+                <!-- <a class=" read-more button text-center" role="button" href="#">Read More</a> -->
+                <section class="read-more-main">
+                    <a href="" id="btn-read-more">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2" id="Layer_2"><path d="M19,26a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L26.59,16l-8.3-8.29a1,1,0,0,1,1.42-1.42l9,9a1,1,0,0,1,0,1.42l-9,9A1,1,0,0,1,19,26Z"/><path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/></g><g id="frame"><rect fill="none" height="32" width="32"/></g></svg>
+                        Read More
+                    </a>
+                </section>
+            
                 <div class="short-line"></div>
             </div>
         </div>
@@ -117,7 +144,7 @@
 <!-- Home-Text End -->
 
     <!-- Redirects -->
-    <section class="pt-5 pb-5">
+    <!-- <section class="pt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -165,7 +192,62 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="card-slider" class="owl-carousel">
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="#">Lorem ipsum dolor sit amet.</a>
+                  </h3>
+                  <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                  <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                  <a href="#" class="read-more">read more</a>
+                </div>
+              </div>
+              
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503" alt="">
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="#">Lorem ipsum dolor sit amet.</a>
+                  </h3>
+                  <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                  <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                  <a href="#" class="read-more">read more</a>
+                </div>
+              </div>
+              
+              <div class="post-slide">
+                <div class="post-img">
+                  <img src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500" alt="">
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="#">Lorem ipsum dolor sit amet.</a>
+                  </h3>
+                  <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                  <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                  <a href="#" class="read-more">read more</a>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      
 <!-- End Of Redirects -->
 
 <!-- background-image: url(/img/blue-bkg.png); background-repeat: no-repeat; background-size: 3000px 800px; -->
@@ -245,7 +327,7 @@
         <div id="events" class="event-list owl-carousel owl-loaded owl-drag">
             <div class="owl-stage-outer">
                 <div class="owl-stage">
-                    <div class="owl-item cloned" style="width: 374.5px;">
+                    <!-- <div class="owl-item cloned" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
                                 <svg
@@ -290,8 +372,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="owl-item cloned" style="width: 374.5px;">
+                    </div> -->
+                    <!-- <div class="owl-item cloned" style="width: 374.5px;">
                         <div class="event-item featured">
                             <div class="event-schedule">
                                 <svg
@@ -336,8 +418,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="owl-item cloned" style="width: 374.5px;">
+                    </div> -->
+                    <!-- <div class="owl-item cloned" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
                                 <svg
@@ -382,8 +464,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="owl-item cloned" style="width: 374.5px;">
+                    </div> -->
+                    <!-- <div class="owl-item cloned" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
                                 <svg
@@ -428,7 +510,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="owl-item active" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
@@ -521,7 +603,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="owl-item active" style="width: 374.5px;">
+                    <!-- <div class="owl-item active" style="width: 374.5px;">
                         <div class="event-item featured">
                             <div class="event-schedule">
                                 <svg
@@ -566,8 +648,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="owl-item active" style="width: 374.5px;">
+                    </div> -->
+                    <!-- <div class="owl-item active" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
                                 <svg
@@ -612,8 +694,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="owl-item" style="width: 374.5px;">
+                    </div> -->
+                    <!-- <div class="owl-item active" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
                                 <svg
@@ -658,8 +740,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="owl-item cloned" style="width: 374.5px;">
+                    </div> -->
+                    <!-- <div class="owl-item cloned" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
                                 <svg
@@ -704,8 +786,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="owl-item cloned" style="width: 374.5px;">
+                    </div> -->
+                    <!-- <div class="owl-item cloned" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
                                 <svg
@@ -750,8 +832,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="owl-item cloned" style="width: 374.5px;">
+                    </div> -->
+                    <div class="owl-item active" style="width: 374.5px;">
                         <div class="event-item featured">
                             <div class="event-schedule">
                                 <svg
@@ -797,7 +879,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="owl-item cloned" style="width: 374.5px;">
+                    <div class="owl-item active" style="width: 374.5px;">
                         <div class="event-item">
                             <div class="event-schedule">
                                 <svg
@@ -1088,13 +1170,13 @@ responsive:{
                     items:1
                 },
                 768:{
-                    items:2
-                },
-                979:{
                     items:3
                 },
+                979:{
+                    items:2
+                },
                 1199:{
-                    items:4
+                    items:3
                 }
             },
   dots: true,
@@ -1115,6 +1197,18 @@ $(".next").click(function () {
   Lowl.trigger('prev.owl.carousel');
 });
 
+</script>
+
+<script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
 </script>
 
     <!-- Javascript Files -->
