@@ -1,263 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img\favicon\ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bethel Methodist Academy</title>
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img\favicon\apple-icon-57x57.png"> 
-    <link rel="apple-touch-icon" sizes="60x60" href="img\favicon\apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img\favicon\apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img\favicon\apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img\favicon\apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img\favicon\apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img\favicon\apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img\favicon\apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img\favicon\apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img\favicon\android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img\favicon\favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img\favicon\favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img\favicon\favicon-16x16.png">
-    <link rel="manifest" href="img\favicon\manifest.json">
- 
-
-    <!-- CDN CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css">
-
-    <!-- Local CSS -->    
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="css\owl.carousel.min.css">
-    <link rel="stylesheet" href="css\owl.theme.default.min.css">
-    <link rel="stylesheet" href="css\style_news.css">
-    <!-- <link rel="stylesheet" href="css\style_footer.css"> -->
-    <link rel="stylesheet" href="css\news_events_tabs.css">
-    <!-- <link rel="stylesheet" href="css\style-about.css"> -->
-    <link rel="stylesheet" href="css\new_style_footer.css">
-
-    <!-- Icons CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    <!-- Navbar -->
-    <!-- <nav>
-        <ul class="menu">
-            <li class="logo"><a href="#">FollowAndrew.dev</a></li>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="about.html">About</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            </li>
-            <li class="item button"><a href="#">Log In</a></li>
-            <li class="item button secondary"><a href="#">Sign Up</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-    </nav> -->
-
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Edukate</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link active">About</a>
-                    <a href="course.html" class="nav-item nav-link">Courses</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">Course Detail</a>
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
-                            <a href="team.html" class="dropdown-item">Instructors</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+<section class="" style="padding: 0;">
+    <div class="container">
+        <!-- <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h2>Footer #01</h2>
             </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
-
-    <!-- Hero -->
-    <div class="container1">
-        <div class="hero-text">
-            <h1>Bethel Methodist Academy</h1>
-            <p>Our school emphasizes creative thinking, critical reasoning and effective communication. Our school encourages behavior that is ethical, responsible and respectful to the rights
-            of others. Our school appreciates cultural diversity ...</p>
-        </div>
-        <!-- <div class="read-btn">
-            <a href="#"><button type="button">Read More</button></a>
         </div> -->
     </div>
-
-
-    <section class="splide" aria-label="Hero-heading">
-        <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide"><img src="img\asset1.jpg" alt=""></li>
-                  <li class="splide__slide"><img src="img\2_4_s.jpg" alt=""></li>
-                  <li class="splide__slide"><img src="img\2_2_s.jpg" alt=""></li>
-              </ul>
-        </div>
-      </section>
-<!-- Hero End -->
-
-<!-- Home-Text -->
-<!-- <div class="container2" style="padding-top: 10px;">
-    <div class="row">
-        <div class="col-sm-12 offset-0 home_intro_text" data-aos="fade-up" data-aos-delay="100">
-            <h1 class="text-center"><span>Welcome To </span> <br> Bethel Methodist Academy</h1>
-            <p class="fs-4 text-center"><br/><span class="main-body" style="color: #1a1919;">We are thrilled to have you visit our website for Bethel Methodist Academy. <br>
-            As part of the network of schools under the Methodist Missionary Schools, <br> 
-            we have access to a wealth of resources and support, 
-            allowing our dedicated staff to provide the highest level of education to our students.</span><br/><br/></p>
-            <a class=" read-more button text-center" role="button" href="#">Read More</a>
-            <section class="read-more-main">
-                <a href="" id="btn-read-more">
-                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2" id="Layer_2"><path d="M19,26a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L26.59,16l-8.3-8.29a1,1,0,0,1,1.42-1.42l9,9a1,1,0,0,1,0,1.42l-9,9A1,1,0,0,1,19,26Z"/><path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/></g><g id="frame"><rect fill="none" height="32" width="32"/></g></svg>
-                    Read More
-                </a>
-            </section>
-        
-            <div class="short-line"></div>
-        </div>
-    </div>
-</div> -->
-<!-- Home-Text End -->
-
-
-    <!-- Redirects -->
-    <!-- <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-    
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-    
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="img\2_26_hl.jpg">
-                                            <div class="card-body" style="font-size: 20px;">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                <a href="#" class="btn btn-primary btn-lg">Go somewhere</a>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="img\2_28_hl.jpg">
-                                            <div class="card-body" style="font-size: 20px;">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                <a href="#" class="btn btn-primary btn-lg">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="img\2_31_hl.jpg">
-                                            <div class="card-body" style="font-size: 20px;">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                <a href="#" class="btn btn-primary btn-lg">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Redirects -->
-    <div class="container-fluid">
+</section>
+<footer class="footer-01">
+    <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div id="card-slider" class="owl-carousel">
-              <div class="post-slide">
-                <div class="post-img">
-                  <img src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
-                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                </div>
-                <div class="post-content">
-                  <h3 class="post-title">
-                    <a href="#">Lorem ipsum dolor sit amet.</a>
-                  </h3>
-                  <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                  <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                  <a href="#" class="read-more">read more</a>
-                </div>
-              </div>
-              
-              <div class="post-slide">
-                <div class="post-img">
-                  <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503" alt="">
-                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                </div>
-                <div class="post-content">
-                  <h3 class="post-title">
-                    <a href="#">Lorem ipsum dolor sit amet.</a>
-                  </h3>
-                  <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                  <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                  <a href="#" class="read-more">read more</a>
-                </div>
-              </div>
-              
-              <div class="post-slide">
-                <div class="post-img">
-                  <img src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500" alt="">
-                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                </div>
-                <div class="post-content">
-                  <h3 class="post-title">
-                    <a href="#">Lorem ipsum dolor sit amet.</a>
-                  </h3>
-                  <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                  <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                  <a href="#" class="read-more">read more</a>
-                </div>
-              </div>
-                
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h2 class="footer-heading">Bethel Methodist Academy</h2>
+                <p>Bethel Methodist Academy is a mission school own and managed by Bethel Methodist Church, Taifa.The Mission of the school is to train children to become fully functioning individuals within their various communities.</p>
+                <ul class="ftco-footer-social p-0">
+      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-social-facebook"></span></a></li>
+      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-social-twitter"></span></a></li>
+      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-social-instagram"></span></a></li>
+    </ul>
             </div>
-          </div>
+            <!-- <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h2 class="footer-heading">Latest News</h2>
+                <div class="block-21 mb-4 d-flex">
+      <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+      <div class="text">
+        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+        <div class="meta">
+          <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
+          <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+          <div><a href="#"><span class="icon-chat"></span> 19</a></div>
         </div>
       </div>
-      
-<!-- End Of Redirects -->
+    </div>
+    <div class="block-21 mb-4 d-flex">
+      <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
+      <div class="text">
+        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+        <div class="meta">
+          <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
+          <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+          <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+        </div>
+      </div>
+    </div>
+            </div> -->
+            <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+                <h2 class="footer-heading">Quick Links</h2>
+                <ul class="list-unstyled">
+      <li><a href="#" class="py-2 d-block">Home</a></li>
+      <li><a href="#" class="py-2 d-block">About</a></li>
+      <!-- <li><a href="#" class="py-2 d-block">Services</a></li> -->
+      <li><a href="#" class="py-2 d-block">Apply</a></li>
+      <li><a href="#" class="py-2 d-block">Blog</a></li>
+      <!-- <li><a href="#" class="py-2 d-block">Contact</a></li> -->
+    </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h2 class="footer-heading">Have a Question?</h2>
+                <div class="block-23 mb-3">
+      <ul>
+        <li><span class="icon ion-ios-pin"></span><span class="text">Bethel Methodist Academy
+            Olive Green Lane,
+             Kwabenya,
+            P. O. Box 416, Taifa</span></li>
+        <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">+233 59 287 3066</span></a></li>
+        <li><a href="#"><span class="icon ion-ios-email"></span><span class="text">info@bmaschool.edu.gh</span></a></li>
 
-<!-- background-image: url(/img/blue-bkg.png); background-repeat: no-repeat; background-size: 3000px 800px; -->
-    
-<!-- News Section -->
+      </ul>
+    </div>
+            </div>
+        </div>        
+        <div class="footer-logo">
+        <img src="img\logo.jpg" alt="" style="width: 20%; float: right; margin-top: -280px;">
+    </div>
+
+        <div class="row mt-5">
+  <div class="col-md-12 text-center">
+    <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+  </div>
+</div>
+    </div>
+</footer>
+
+
+
+
+
+
+
     <section class="news_events_tab" style="background: rgb(0,58,108);
     background: linear-gradient(177deg, rgba(0,58,108,1) 0%, rgba(1,114,182,1) 100%); background-size: 100%; background-repeat: repeat-y;">
         <div class="container" >
@@ -323,7 +155,7 @@
                 </div>
             </div>
             <div class="view-all"><a href="#" class="view-all-texts">View All News</a></div>
-<div class="container">
+<!-- <div class="container"> -->
 <div class="row" style="margin-top: 40px; padding-bottom: 50px;">
     <div class="col-md-12 text-center">
         <h2 class="heading-section mb-2" style="color: #85cfd6;">KEEP UP TO DATE</h2>
@@ -953,230 +785,27 @@
         </div>
     </section>
 
-    
-<!-- End Of News Section -->
 
-<div>space</div>
 
-<!-- Footer Section -->
-<footer>
-    <div class="content">
-      <div class="left box">
-        <div class="upper">
-          <div class="topic">About us</div>
-          <p>CodingLab is a channel where you can learn HTML,
-          CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+<!-- Home-Text -->
+      <div class="container2" style="padding-top: 10px;">
+        <div class="row">
+            <div class="col-sm-12 offset-0 home_intro_text" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="text-center"><span>Welcome To </span> <br> Bethel Methodist Academy</h1>
+                <p class="fs-4 text-center"><br/><span class="main-body" style="color: #1a1919;">We are thrilled to have you visit our website for Bethel Methodist Academy. <br>
+                As part of the network of schools under the Methodist Missionary Schools, <br> 
+                we have access to a wealth of resources and support, 
+                allowing our dedicated staff to provide the highest level of education to our students.</span><br/><br/></p>
+                <!-- <a class=" read-more button text-center" role="button" href="#">Read More</a> -->
+                <section class="read-more-main">
+                    <a href="" id="btn-read-more">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2" id="Layer_2"><path d="M19,26a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L26.59,16l-8.3-8.29a1,1,0,0,1,1.42-1.42l9,9a1,1,0,0,1,0,1.42l-9,9A1,1,0,0,1,19,26Z"/><path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/></g><g id="frame"><rect fill="none" height="32" width="32"/></g></svg>
+                        Read More
+                    </a>
+                </section>
+            
+                <div class="short-line"></div>
+            </div>
         </div>
-        <div class="lower">
-          <div class="topic">Contact us</div>
-          <div class="phone">
-            <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
-          </div>
-          <div class="email">
-            <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="middle box">
-        <div class="topic">Our Services</div>
-        <div><a href="#">Web Design, Development</a></div>
-        <div><a href="#">Web UX Design, Reasearch</a></div>
-        <div><a href="#">Web User Interface Design</a></div>
-        <div><a href="#">Theme Development, Design</a></div>
-        <div><a href="#">Mobile Application Design</a></div>
-        <div><a href="#">Wire raming & Prototyping</a></div>
-      </div>
-      <div class="right box">
-        <div class="topic">Subscribe us</div>
-        <form action="#">
-          <input type="text" placeholder="Enter email address">
-          <input type="submit" name="" value="Send">
-          <div class="media-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </form>
-      </div>
     </div>
-    <div class="bottom">
-      <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
-    </div>
-  </footer>
-
-
-
-<!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="js\popper.js"></script>
-    <script src="js\owl.carousel.min.js"></script>
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
-
-
-<script>
-    var splide = new Splide( '.splide', {
-        type  : 'fade',
-        rewind: true,
-        autoplay: true,
-        arrows: false,
-        pagination: false,
-        } );
-
-splide.mount();
-</script>
-
-<script>
-    (function($) {
-
-"use strict";
-
-var fullHeight = function() {
-
-    $('.js-fullheight').css('height', $(window).height());
-    $(window).resize(function(){
-        $('.js-fullheight').css('height', $(window).height());
-    });
-
-};
-fullHeight();
-
-var carousel = function() {
-    $('.featured-carousel').owlCarousel({
-    loop: true,
-    autoplay: true,
-    margin:30,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
-    nav:true,
-    dots: true,
-    autoplayHoverPause: false,
-    items: 1,
-    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:2
-      },
-      1000:{
-        items:3
-      }
-    }
-    });
-
-};
-carousel();
-
-})(jQuery);
-</script>
-
-<!-- <script>
-     (function($) {
-    'use strict';
-    $(function () {
-        Event carousel
-        $("#events").owlCarousel({
-            loop:true,
-            margin:0,
-            autoPlay: 3000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                768:{
-                    items:2
-                },
-                979:{
-                    items:3
-                },
-                1199:{
-                    items:4
-                }
-            },
-            singleItem : false,
-            dots: true,
-            nav: true,
-            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
-        });
-        $(".btn-event-show").collapse();
-        //Events: Tooltip
-        $('.event-user').tooltip({ boundary: 'window' });
-        feather.replace();
-    });
-})(jQuery);
-</script> -->
-
-<script>
-   var Lowl = $("#events");
-Lowl.owlCarousel({
-//   items: 1,
-//   itemsDesktop: [1000, 2],
-//   itemsDesktopSmall: [991, 2],
-//   itemsTablet: [600, 2],
-responsive:{
-                0:{
-                    items:1
-                },
-                768:{
-                    items:3
-                },
-                979:{
-                    items:2
-                },
-                1199:{
-                    items:3
-                }
-            },
-  dots: true,
-  loop: true,
-  margin: 0,
-  rtl: true,
-  pagination: false,
-  autowidth: false,
-  animateOut: 'fadeOut',
-  animateIn: 'fadeIn',
-});
-
-$(".prev").click(function () {
-  Lowl.trigger('next.owl.carousel');
-});
-
-$(".next").click(function () {
-  Lowl.trigger('prev.owl.carousel');
-});
-
-</script>
-
-<script>
-    $(function() {
-    $(".toggle").on("click", function() {
-        if ($(".item").hasClass("active")) {
-            $(".item").removeClass("active");
-        } else {
-            $(".item").addClass("active");
-        }
-    });
-});
-</script>
-
-    <!-- Javascript Files -->
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-</body>
-</html> 
+<!-- Home-Text End -->
